@@ -1,7 +1,20 @@
 namespace Domain.Entities;
 
-public sealed class Pedido : Entity<Guid>
+public sealed class Pedido : Entity<ClientePed>
 {
+    private Pedido(
+        ClientePed id,
+        string Nombre,
+        string Direccion,
+        int Saldo,
+        int Credito,
+        int Descuento
+    )
+    : base(id)
+    {
+        
+    }
+
     /*Constructor EFCore*/
 
     private class Pedido
