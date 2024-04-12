@@ -8,5 +8,6 @@ public sealed class Fabrica : Entity<Guid>
     {
     }
 
+    public int Telefono{get; private set;} = 0;
     
 }

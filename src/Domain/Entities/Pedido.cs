@@ -8,5 +8,12 @@ public sealed class Pedido : Entity<Guid>
     {
     }
 
+    /// <summary>
+    /// Fecha en la que se realiza dicho pedido
+    /// </summary>
+    /// <value>String con el Nombre que aplica al Cliente.</value>
+    public string FechaPedido{get; private set;} = string.Empty;
     
+    public int Total{get; set private sbyte;} = 0;
+
 }
