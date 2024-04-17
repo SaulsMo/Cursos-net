@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.Aspnetcore" Version="11.3.0" />
+  </ItemGroup>
+
 </Project>

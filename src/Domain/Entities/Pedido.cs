@@ -12,7 +12,11 @@ public sealed class Pedido : Entity<ClientePed>
     )
     : base(id)
     {
-        
+        Nombre = Nombre;
+        Direccion = Direccion;
+        Saldo = saldo;
+        Credito = credito;
+        Descuento = Descuento;
     }
 
     /*Constructor EFCore*/

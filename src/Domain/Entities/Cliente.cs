@@ -3,8 +3,24 @@ namespace Domain.Entities;
 public sealed class Cliente : Entity<Guid>
 {
     /**Constructor for EFCore*/
+    private Cliente(
+        Cliente id,
+        string nombre,
+        string direccion,
+        int credito,
+        int saldo,
+        int? descuento)
+        : base(id)
+    {
+        Nombre = nombre;
+        Direccion = direccion;
+        Credito = credito;
+        Saldo = saldo;
+        Descuento = descuento;
+    }
 
-    private class Cliente
+
+    private class Cliente()
     {
     }
 
@@ -33,7 +49,23 @@ public sealed class Cliente : Entity<Guid>
     public int Saldo{get; private set;} = 0;
 
     /// <summary>
-    /// DEscuento del Cliente
+    /// Descuento del Cliente
     /// </summary>
-    public int Descuento{get; private set;} = 0;
+    public int? Descuento{get; private set;}
+
+    /*
+    * Exponer Constructor
+    */
+
+    public static Cliente Create(
+        string Nombre,
+        string Direccion,
+        int Credito,
+        int Saldo,
+        int? Descuento)
+    {
+        var cliente = new Cliente(
+            
+        )
+    }
 }

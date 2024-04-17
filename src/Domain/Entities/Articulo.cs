@@ -4,7 +4,7 @@ public sealed class Articulo : Entity<Guid>
 {
     /*Constructor EFCore*/
 
-    private class Articulo
+    private class Articulo()
     {
     }
 

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "nKkPlwwzwOV8f+p4U4z4U9sxTgJme8N12vM2zOva3P/3A+1h59FdqVWwE5K+iLfK88AyQqdVAFVSskGfWYgzpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saulm\\Desktop\\Saul\\Cursos-net\\src\\Consola\\Consola.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saulm\\.nuget\\packages\\dumpify\\0.6.5\\dumpify.0.6.5.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\saulm\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
