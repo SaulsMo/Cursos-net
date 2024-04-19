@@ -1,22 +1,22 @@
+using Domain.Abstractions;
+
+namespace Domain.Abstractions;
+
 namespace Domain.Entities;
 
 public sealed class Pedido : Entity<ClientePed>
 {
+
+
     private Pedido(
         ClientePed id,
-        string Nombre,
-        string Direccion,
-        int Saldo,
-        int Credito,
-        int Descuento
+        string fechapedido,
+        int total
     )
     : base(id)
     {
-        Nombre = Nombre;
-        Direccion = Direccion;
-        Saldo = saldo;
-        Credito = credito;
-        Descuento = Descuento;
+        FechaPedido = fechapedido;
+        Total = total;
     }
 
     /*Constructor EFCore*/
@@ -32,5 +32,17 @@ public sealed class Pedido : Entity<ClientePed>
     public string FechaPedido{get; private set;} = string.Empty;
     
     public int Total{get; set private sbyte;} = 0;
+
+    /*Exponer el Constructor*/
+
+    public static Pedido Create(
+        string FechaPedido,
+        int Total)
+    {
+        var pedido = new Pedido(
+            id: new ClientePed(Nombre, Direccion, Saldo, Credito, Descuento),
+            
+        )
+    }
 
 }

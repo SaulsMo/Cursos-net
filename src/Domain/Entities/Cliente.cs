@@ -2,7 +2,7 @@ namespace Domain.Entities;
 
 public sealed class Cliente : Entity<Guid>
 {
-    /**Constructor for EFCore*/
+    /*Constructor Principal*/
     private Cliente(
         Cliente id,
         string nombre,
@@ -19,6 +19,7 @@ public sealed class Cliente : Entity<Guid>
         Descuento = descuento;
     }
 
+    /**Constructor for EFCore*/
 
     private class Cliente()
     {
@@ -58,14 +59,22 @@ public sealed class Cliente : Entity<Guid>
     */
 
     public static Cliente Create(
-        string Nombre,
-        string Direccion,
-        int Credito,
-        int Saldo,
-        int? Descuento)
+        string nombre,
+        string direccion,
+        int credito,
+        int saldo,
+        int? descuento = "")
     {
         var cliente = new Cliente(
-            
-        )
+            Guid.NewGuid(),
+            nombre,
+            direccion,
+            credito,
+            saldo,
+            descuento ?? string.Empty);
+
+            return cliente;
     }
+
+
 }
